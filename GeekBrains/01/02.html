@@ -6,7 +6,7 @@
   <script>
     var totalAnswers = 0;
     var answer = prompt('Сколько концов у двух с половиной палок?');    
-    if (answer === 6){
+    if (answer == 6){
       alert('Верно! Следующая загадка');
       totalAnswers++;
     } else {
@@ -14,7 +14,7 @@
     }
     
     var answer = prompt('Кругом вода, а с питьем беда. Что это?');    
-    if (answer == 'море'){
+    if (answer.toLowerCase() == 'море'){
       alert('Верно! Следующая загадка');
       totalAnswers++;
     } else {
@@ -22,7 +22,7 @@
     }
     
     var answer = prompt('Не лает, не кусает, а к будке привязана. Отгадайте!');    
-    if (answer == 'цепь'){
+    if (answer.toLowerCase() == 'цепь'){
       alert('Верно! Следующая загадка');
       totalAnswers++;
     } else {
@@ -30,14 +30,15 @@
     }
     
     var answer = prompt('К вечеру умирает, по утру оживает. Это?');    
-    if (answer == 'день'){
+    if (answer.toLowerCase() == 'день'){
       alert('Верно! Следующая загадка');
       totalAnswers++;
     } else {
-      alert('Не угадали! Новая загадка');
+      alert('Не угадали!');
     }
     
     alert('Поздравляем с завершением! Ваш результат - ' + totalAnswers + '/4');
+    alert('До свидания!');
     
   </script>
 </head>
