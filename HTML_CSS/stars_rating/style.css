@@ -1,0 +1,20 @@
+/*
+#rating-stars__container {
+	font-size: 0;
+}
+*/
+
+.rating-star__radio:checked ~ label.rating-star,
+.rating-star:hover ~ * {
+	background-color: lightgray;
+}
+
+.rating-star,
+.rating-star__radio:checked + label.rating-star {
+	background-color: gold;
+	display: inline-block;
+	height: 40px;
+	margin-left: 6px;
+	width: 40px;
+	border-radius: 50%;
+}
